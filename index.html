@@ -1,33 +1,105 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Maven+Pro:400,500' rel='stylesheet' type='text/css'>
     <meta charset="utf-8">
-    <title>Title</title>
-
-    <link rel="stylesheet" href="weatherappts.css">
+    <title>WeatherAppts</title>
+    <!-- <link rel="stylesheet" href="css/mobile.css"> -->
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/weatherappts.css">
+    <!-- <link rel="stylesheet" href="css/jquery.css"> -->
   </head>
   <body>
-    <div class="spa-content">
-
+    <div class="spane-content">
+      <div class="spanel-3">
+        <div class="header">
+          <h1>Details</h1>
+          <button class="back-spane2"><</button>
+          <button class="edit-details">Edit</button>
+        </div>
+        <form>
+          <p class= "title">Romantic Dinner</p>
+          <br>
+          <p class= "time">7:00pm</p>
+          <p class="date"> 02/14/2015</p>
+          <br>
+          <p class= "location">467 Main Street, Durham, NC </p>
+          <br>
+          <div class= "weather"> weather img here! </div>
+        </form>
     </div>
 
-    <script id="page1" type="text"
-     <div class="panel-1">
-     <form>
-     <input type="text">
-     <button>save</button>
-     </form>
-     </div>
-     </script>
 
-     <script id="page2" type="text"
-     <div class="panel-1">
-     <form>
-     <button>go back</button>
-     </form>
-     </div>
-     </script>
-     
+    <script id="spane-1" type="text/html">
+     <div class="spanel-1">
+       <div class="header">
+         <h1>Appointments</h1>
+         <button class="add-appointment">+</button>
+       </div>
+       <div class="list-holder">
+      </div>
+    </script>
 
+
+
+    <script id="spane-2" type="text/html">
+     <div class="spanel-2">
+       <div class="header">
+         <h1>Make Appt</h1>
+         <button class="back-spane1"><</button>
+
+       </div>
+       <form>
+         <div class = "input-box">
+           Title:
+           <input type="text" name="Title" placeholder="Romantic Dinner" size="15" maxlength="30"/>
+        </div>
+        <div class = "input-box">
+          Date:
+          <input type="text" name="Date" placeholder="02/14/2015" size="15" maxlength="30"/>
+        </div>
+        <div class = "input-box">
+          Time:
+          <input type="text" name="Time" placeholder="7:00 pm" size="15" maxlength="30"/>
+        </div>
+        <div class="input-box">
+          Street:
+          <input type="text" name="Street" placeholder="467 Main Street" size="15" maxlength="30"/>
+        </div>
+        <div class="input-box">
+          City, State:
+          <input type="text" name="City, State" placeholder="Durham, NC" size="15" maxlength="30"/>
+        </div>
+        <button class= "save">Save the Date!</button>
+       </form>
+     </div>
+
+     <script id="spane-3" type="text/html">
+      <div class="spanel-3">
+        <div class="header">
+          <h1>Details</h1>
+          <button class="back-spane2"><</button>
+          <button class="edit-details">Edit</button>
+        </div>
+        <form>
+          <p class= "title">Romantic Dinner</p>
+          <br>
+          <p class= "time">7:00pm</p>
+          <p class="date"> 02/14/2015</p>
+          <br>
+          <p class= "location">467 Main Street, Durham, NC </p>
+          <br>
+          <div class= "weather"> weather img here! </div>
+        </form>
+    </script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"</script>
+    <script src="js/app.js"></script>
+    <script src="js/appointments.js"></script>
+    <script src="js/page-manager.js"></script>
+    <script src="js/show-appointments.js"></script>
+    <script src="js/appointment-store.js"></script>
+  <script src= "JS/jquery-2.1.3.min.js"> </script>
+  <script src="weatherappts.js"></script>
   </body>
 </html>
